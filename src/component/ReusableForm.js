@@ -178,16 +178,18 @@ function ReusableForm(props) {
                 <option value = "124" >124</option>
               </Form.Select>
             </FloatingLabel>
-
             </Col>
           </Row>
+        </div>
 
+        <div className = "button-space">
           <div className="d-grid gap-2">
             <Button type = 'submit' variant="outline-success" size="lg">
-              {props.buttonText}
+            {props.buttonText}
             </Button>
           </div>
         </div>
+        
       </form>
     </React.Fragment>
   );
