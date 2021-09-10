@@ -1,6 +1,6 @@
 # Tap Room
 
-#### a tap room in React where a bar can track their kegs.
+#### a tap room in React where a bar can track their kegs also with full CRUD functionality.
 
 #### Authored by Erika Debelis
 
@@ -20,6 +20,8 @@
 ## Description
 describe the site/application
 
+![tap-room-img](tap-room-img.png)
+_(a visual representation of the components used for this project)_
 ## Setup/Installation Requirements
 
 1. Download or clone https://github.com/ErikaDebelis/react-tap-room to your local machine
