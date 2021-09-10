@@ -13,6 +13,7 @@ function Menu() {
         name = {keg.name}
         alcoholContent = {keg.alcoholContent}
         price = {keg.price}
+        quantity = {keg.quantity}
         id = {keg.id}
         key = {keg.id}/>
       )}

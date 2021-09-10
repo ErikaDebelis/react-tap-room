@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
+import NewKegForm from './NewKegForm';
 import KegDetail from './KegDetail';
 import EditKegForm from './EditKegForm';
 import Button from 'react-bootstrap/Button';
@@ -20,7 +21,8 @@ class KegControl extends React.Component {
     if (this.state.selectedKeg != null) {
       this.setState({
         formVisibleOnPage: false,
-        selectedKeg: null
+        selectedKeg: null,
+        editing: false
       });
     } else {
       this.setState(prevState => ({formVisibleOnPage: !prevState.formVisibleOnPage}));
@@ -67,8 +69,8 @@ class KegControl extends React.Component {
     let buttonText = null;
 
     if(this.state.editing) {
-      currentlyVisibleState = 
-      <EditKegForm 
+      currentlyVisibleState =
+      <EditKegForm
         keg = {this.state.selectedKeg}
         onEditingKeg = {this.handleEditingKegInMenu}/>
       buttonText = "Return to Menu";
@@ -82,12 +84,18 @@ class KegControl extends React.Component {
       buttonText = "Return to Menu";
     }
     else if(this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewKegForm onNewKegCreation = {this.handleAddingNewKegToMenu} />
+      currentlyVisibleState =
+        <NewKegForm
+          onNewKegCreation = {this.handleAddingNewKegToMenu} />
       buttonText = "Return to Menu";
     } else {
-      currentlyVisibleState = <Menu menu = {this.state.masterMenu} onKegSelection = {this.handleChangingSelectedKeg} />;
+      currentlyVisibleState =
+        <Menu
+          menu = {this.state.masterMenu}
+          onKegSelection = {this.handleChangingSelectedKeg} />;
       buttonText = "Add Keg"
     }
+
     return (
       <React.Fragment>
         {currentlyVisibleState}

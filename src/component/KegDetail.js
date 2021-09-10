@@ -13,6 +13,7 @@ function KegDetail(props) {
       <h4>Name: {keg.name}</h4>
       <h4>Alcohol Content: {keg.alcoholContent}</h4>
       <h4>Price: {keg.price}</h4>
+      <h4>Quantity: {keg.quantity}</h4>
       <Button variant="outline-warning" size="sm" onClick = {props.onClickingEdit}>Update Keg</Button>
       <Button variant="outline-danger" size="sm" onClick = {() => onClickingDelete(keg.id) }>Delete Keg</Button>
       <hr/>

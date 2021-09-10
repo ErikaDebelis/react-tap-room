@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import ReusableForm from "./ReusableForm";
 
-function NewKegForm() {
+function NewKegForm(props) {
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({
@@ -11,6 +11,7 @@ function NewKegForm() {
       name: event.target.name.value,
       alcoholContent: event.target.alcoholContent.value,
       price: event.target.price.value,
+      quantity: event.target.quantity.value,
       id: v4()
     });
   }

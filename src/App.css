@@ -22,3 +22,11 @@ h1 h2{
 .form-space {
   padding-top: 3em; 
 }
+
+.search {
+  padding-left: 40em;
+}
+
+.btn-success {
+  width: 8em;
+}
