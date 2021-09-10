@@ -9,7 +9,9 @@ function App() {
     <React.Fragment>
       <div className="App">
         <Header />
+        <div className = "main-body">
         <KegControl />
+        </div>
       </div>
     </React.Fragment>
   );
