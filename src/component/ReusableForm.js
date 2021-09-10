@@ -179,6 +179,16 @@ function ReusableForm(props) {
               </Form.Select>
             </FloatingLabel>
             </Col>
+
+            <Col md>
+            <FloatingLabel controlId="floatingInputGrid" label="Keg Price">
+              <Form.Control
+                type='text'
+                name='pintsRemaining'
+                placeholder='Pints Remaining in Keg'
+                defaultValue={keg.pintsRemaining} />
+              </FloatingLabel>
+            </Col>
           </Row>
         </div>
 
@@ -189,7 +199,7 @@ function ReusableForm(props) {
             </Button>
           </div>
         </div>
-        
+
       </form>
     </React.Fragment>
   );
