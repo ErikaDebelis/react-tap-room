@@ -9,7 +9,6 @@ function Keg(props) {
         <h6>Name: {props.name}</h6>
         <h6>Alcohol Content: {props.alcoholContent}</h6>
         <h6>Price: {props.price}</h6>
-        <h6>Quantity: {props.quantity}</h6>
         {props.pintsRemaining === 0 && <h4>Sold Out!</h4> }
       </div>
     </React.Fragment>

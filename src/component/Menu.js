@@ -13,7 +13,7 @@ function Menu(props) {
         name = {keg.name}
         alcoholContent = {keg.alcoholContent}
         price = {keg.price}
-        quantity = {keg.quantity}
+        pintsRemaining = {keg.pintsRemaining}
         id = {keg.id}
         key = {keg.id}/>
       )}
