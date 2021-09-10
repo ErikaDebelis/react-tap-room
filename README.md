@@ -20,7 +20,7 @@
 ## Description
 describe the site/application
 
-![Screenshot](screenshot.png)
+![Screenshot](./screenshot.png)
 _(a visual representation of the components used for this project)_
 ## Setup/Installation Requirements
 
