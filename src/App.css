@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&family=Permanent+Marker');
+
+h1 h2{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Walter Turncoat', cursive;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-body {
+  padding: 10px 10em;
+}
+
+.button-space {
+  padding: 3em 3em;
+}
+
+.form-space {
+  padding-top: 3em; 
+}

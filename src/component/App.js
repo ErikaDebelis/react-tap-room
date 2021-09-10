@@ -6,8 +6,10 @@ import '../../src/App.css';
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <KegControl />
+      <div className="App">
+        <Header />
+        <KegControl />
+      </div>
     </React.Fragment>
   );
 }
