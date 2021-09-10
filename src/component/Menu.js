@@ -2,11 +2,11 @@ import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
 
-function Menu() {
+function Menu(props) {
   return (
     <React.Fragment>
       <hr/>
-      {props.Menu.map((keg) =>
+      {props.menu.map((keg) =>
       <Keg
         whenKegClicked = {props.onKegSelection}
         brand = {keg.brand}
