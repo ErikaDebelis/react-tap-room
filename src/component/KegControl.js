@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './Menu';
 import KegDetail from './KegDetail';
+import EditKegForm from './EditKegForm';
 import Button from 'react-bootstrap/Button';
 
 class KegControl extends React.Component {
@@ -48,11 +49,26 @@ class KegControl extends React.Component {
     this.setState({editing: true});
   }
 
+  handleEditingKegInMenu = (kegToEdit) => {
+    const editedMasterMenu = this.state.masterMenu
+      .filter(keg => keg.id !== this.state.selectedKeg.id)
+      .concat(kegToEdit);
+    this.setState({
+      masterMenu: editedMasterMenu,
+      editing: false,
+      selectedKeg: null
+    });
+  }
+
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
 
-    if(this.state.selectedKeg != null) {
+    if(this.state.editing) {
+      currentlyVisibleState = <EditKegFrom keg = {this.state.selectedKeg} />
+      buttonText = "Return to Menu";
+    }
+    else if(this.state.selectedKeg != null) {
       currentlyVisibleState =
         <KegDetail
           keg = {this.state.selectedKeg}
