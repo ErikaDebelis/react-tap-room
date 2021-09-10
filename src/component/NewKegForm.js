@@ -5,10 +5,10 @@ function NewKegForm() {
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({
-      brand: event.target.brand.value, 
-      name: event.target.name.value, 
-      alcoholContent: event.target.alcoholContent.value, 
-      price: event.target.price.value, 
+      brand: event.target.brand.value,
+      name: event.target.name.value,
+      alcoholContent: event.target.alcoholContent.value,
+      price: event.target.price.value,
       id: v4()
     });
   }

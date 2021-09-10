@@ -1,4 +1,4 @@
-# Tap Room
+# Tap Room :beer:
 
 #### a tap room in React where a bar can track their kegs also with full CRUD functionality.
 
@@ -20,7 +20,7 @@
 ## Description
 describe the site/application
 
-![Screenshot](https://raw.github.com/ErikaDebelis/react-tap-room/main/screenshot.png)
+![Screenshot](https://raw.github.com/ErikaDebelis/react-tap-room/main/assets/screenshot.png)
 _(a visual representation of the components used for this project)_
 ## Setup/Installation Requirements
 
@@ -40,7 +40,7 @@ _no known bugs at this time_
 
 _MIT_
 
-_Copyright (c) 2021 Erika Debelis_
+_Copyright :copyright: 2021 Erika Debelis_
 
 if any issues are discovered while navigating the site, please let me know! It will help me learn and grow!
 

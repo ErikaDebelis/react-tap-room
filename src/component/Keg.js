@@ -12,7 +12,7 @@ function Keg(props) {
   )
 }
 
-Keg.PropTypes = {
+Keg.propTypes = {
   brand: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
