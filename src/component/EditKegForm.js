@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReusableForm from './ReusableForm';
 
 function EditKegForm (props) {
   const { keg } = props;
+
   function handleEditKegFormSubmission(event) {
     event.preventDefault();
     props.onEditKeg({
@@ -20,6 +22,11 @@ function EditKegForm (props) {
       buttonText = "Update Keg" />
     </React.Fragment>
   );
+}
+
+EditKegForm.propTypes = {
+  keg: PropTypes.object,
+  onEditKeg: PropTypes.func
 }
 
 export default EditKegForm;

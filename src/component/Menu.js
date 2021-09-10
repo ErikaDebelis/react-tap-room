@@ -8,6 +8,7 @@ function Menu() {
       <hr/>
       {props.Menu.map((keg) =>
       <Keg
+        whenKegClicked = {props.onKegSelection}
         brand = {keg.brand}
         name = {keg.name}
         alcoholContent = {keg.alcoholContent}

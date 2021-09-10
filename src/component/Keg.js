@@ -11,7 +11,7 @@ function Keg(props) {
         <h6>{props.price}</h6>
       </div>
     </React.Fragment>
-  )
+  );
 }
 
 Keg.propTypes = {
@@ -21,6 +21,6 @@ Keg.propTypes = {
   price: PropTypes.string.isRequired,
   id: PropTypes.string,
   whenKegClicked: PropTypes.func
-}
+};
 
 export default Keg;
