@@ -12,16 +12,18 @@ function Header() {
     <Nav>
       <div class="buttons">
         <Button variant="outline-light" size="sm" margin="10px">Fake Home Button</Button>
-        <Button variant="outline-light" size="sm" margin="10px" >This is all just for visual appeal</Button> 
+        <Button variant="outline-light" size="sm" margin="10px" >for visual appeal</Button> 
         <Button variant="outline-light" size="sm" margin="10px" >IDK another Button</Button>
       </div>
-      <h2>TAP ROOM</h2>
     </Nav>
+    <div className= "title">
+        <h2>TAP ROOM</h2>
+    </div>
     <div className = "search">
       <Form className="d-flex">
         <FormControl
           type="search"
-          placeholder="(again, just for a nice visual)"
+          placeholder="(just for visual)"
           className="mr-2"
           aria-label="Search"
         />
