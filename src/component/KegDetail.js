@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import Keg from './Keg';
+import Button from 'react-bootstrap/Button';
 
 function KegDetail(props) {
   const { keg, onClickingDelete } = props;
@@ -8,12 +9,12 @@ function KegDetail(props) {
   return(
     <React.Fragment>
       <h1>Keg Detail</h1>
-      <h4>keg.brand</h4>
-      <h4>keg.name</h4>
-      <h4>keg.alcoholContent</h4>
-      <h4>keg.price</h4>
-      <button onClick = {props.onClickingEdit}>Update Keg</button>
-      <button onClick = {() => onClickingDelete(keg.id) }>Delete Keg</button>
+      <h4>Brand: {keg.brand}</h4>
+      <h4>Name: {keg.name}</h4>
+      <h4>Alcohol Content: {keg.alcoholContent}</h4>
+      <h4>Price: {keg.price}</h4>
+      <Button variant="outline-warning" size="sm" onClick = {props.onClickingEdit}>Update Keg</Button>
+      <Button variant="outline-danger" size="sm" onClick = {() => onClickingDelete(keg.id) }>Delete Keg</Button>
       <hr/>
     </React.Fragment>
   );
